@@ -200,10 +200,10 @@ extern int Player_highest_level;
 //
 
 //called once at program startup to get the player's name
-RegisterPlayer();
+int RegisterPlayer();
 
 //Inputs the player's name, without putting up the background screen
-RegisterPlayerSub(int allow_abort_flag);
+void RegisterPlayerSub(int allow_abort_flag);
 
 //starts a new game on the given level
 void StartNewGame(int start_level);
@@ -252,7 +252,7 @@ void close_message_window(void);
 extern void create_player_appearance_effect(object *player_obj);
 
 //goto whatever secrect level is appropriate given the current level
-extern goto_secret_level();
+extern int goto_secret_level();
 
 //reset stuff so game is semi-normal when playing from editor
 void editor_reset_stuff_on_level();

@@ -255,7 +255,7 @@ extern void newdemo_stop_playback();
 extern void newdemo_start_recording();
 extern void newdemo_stop_recording();
 
-extern newdemo_get_percent_done();			
+extern int newdemo_get_percent_done();
 
 #endif
 

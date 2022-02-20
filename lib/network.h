@@ -264,6 +264,7 @@ COPYRIGHT 1993-1998 PARALLAX SOFTWARE CORPORATION.  ALL RIGHTS RESERVED.
 
 #include "gameseq.h"
 #include "multi.h"
+#include "newmenu.h"
 
 #define NETSTAT_MENU					0
 #define NETSTAT_PLAYING				1
@@ -331,7 +332,7 @@ void network_join_game();
 void network_rejoin_game();
 void network_leave_game();
 int network_endlevel(int *secret);
-void network_endlevel_poll2( int nitems, struct newmenu_item * menus, int * key, int citem );
+void network_endlevel_poll2( int nitems, newmenu_item * menus, int * key, int citem );
 
 
 int network_level_sync();
